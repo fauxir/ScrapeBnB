@@ -1,15 +1,15 @@
 {
   "name": "scrapebnb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Node.js package for scraping Airbnb property data",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/your-repo-name.git"
+    "url": "git+https://github.com/fauxir/ScrapeBnB.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/your-repo-name/issues"
+    "url": "https://github.com/fauxir/ScrapeBnB/issues"
   },
-  "homepage": "https://github.com/yourusername/your-repo-name#readme",
+  "homepage": "https://github.com/fauxir/ScrapeBnB#readme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
