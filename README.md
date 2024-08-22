@@ -19,12 +19,16 @@ A powerful and easy-to-use Node.js package for scraping Airbnb data. Get detaile
 
 Install the package using npm:
 
-bash npm install scrapebnb
+```bash 
+npm install scrapebnb
+```
 ## 🚀 Usage
 
 First, import the package in your JavaScript file:
 
-javascript const airbnbScraper = require('scrapebnb');
+```javascript 
+const airbnbScraper = require('scrapebnb');
+```
 Now you're ready to use the scraper functions!
 
 ## 📚 API Reference
@@ -61,16 +65,52 @@ Performs a search and returns the first page of results.
 
 ### Fetching listing details
 
-javascript const airbnbScraper = require('scrapebnb');
+```javascript 
 
-async function getListingDetails() { try { const details = await airbnbScraper.getFromRoomUrl( 'https://www.airbnb.com/rooms/12345678', 'USD', '2023-07-01', '2023-07-07' ); console.log(details); } catch (error) { console.error('Error fetching listing details:', error); } }
+const airbnbScraper = require('scrapebnb');
+
+async function getListingDetails() {
+  try {
+    const details = await airbnbScraper.getFromRoomUrl(
+      'https://www.airbnb.com/rooms/12345678',
+      'USD',
+      '2023-07-01',
+      '2023-07-07'
+    );
+    console.log(details);
+  } catch (error) {
+    console.error('Error fetching listing details:', error);
+  }
+}
 
 getListingDetails();
+```
 ### Performing a search
 
-javascript const airbnbScraper = require('scrapebnb');
+```javascript 
 
-async function searchListings() { try { const results = await airbnbScraper.searchAll( '2023-07-01', '2023-07-07', 40.7128, // Northeast latitude -74.0060, // Northeast longitude 40.7000, // Southwest latitude -74.0200, // Southwest longitude 12, // Zoom value 'USD' ); console.log(results); } catch (error) { console.error('Error searching listings:', error); } }
+const airbnbScraper = require('scrapebnb');
+
+async function searchListings() {
+  try {
+    const results = await airbnbScraper.searchAll(
+      '2023-07-01',
+      '2023-07-07',
+      40.7128, // Northeast latitude
+      -74.0060, // Northeast longitude
+      40.7000, // Southwest latitude
+      -74.0200, // Southwest longitude
+      12, // Zoom value
+      'USD'
+    );
+    console.log(results);
+  } catch (error) {
+    console.error('Error searching listings:', error);
+  }
+}
+
+searchListings();
+```
 
 searchListings();
 ## 🤝 Contributing
