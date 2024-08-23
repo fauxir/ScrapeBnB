@@ -3,7 +3,7 @@ const { getFromRoomId, getFromRoomUrl } = require('./lib/details')
 const fs = require('fs').promises;
 
 async function test0() {
-  const roomId = "https://www.airbnb.co.uk/rooms/33571268";
+  const roomId = "https://www.airbnb.co.uk/rooms/20669368";
   const currency = "MXN";
   const checkIn = "2024-11-02";
   const checkOut = "2024-11-10";
@@ -34,7 +34,7 @@ async function test2() {
 }
 
 async function main() {
-  await test1();
+  await test0();
 }
 
 main().catch(console.error);
