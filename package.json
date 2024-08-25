@@ -1,6 +1,6 @@
 {
   "name": "scrapebnb",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A Node.js package for scraping Airbnb property data",
   "repository": {
     "type": "git",
