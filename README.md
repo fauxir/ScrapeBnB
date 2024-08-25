@@ -5,7 +5,7 @@
 
 A powerful and easy-to-use Node.js package for scraping Airbnb data. Get detailed information about listings, prices, and search results with just a few function calls! 🚀
 
-> **Note:** This project is a rewrite of [John Balvin's `pybnb`](https://github.com/johnbalvin/pybnb) package, which is originally written in Python and also has a Go variant. If you're interested in Python or Go implementations, make sure to check out his work and give the repo a star! 🌟
+> **Note:** This project is a rewrite and improved version of [John Balvin's `pybnb`](https://github.com/johnbalvin/pybnb) package, which is originally written in Python and also has a Go variant. If you're interested in Python or Go implementations, make sure to check out his work and give the repo a star! 🌟
 
 ## 📋 Table of Contents
 
