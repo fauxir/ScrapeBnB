@@ -5,9 +5,8 @@
 # Required
 version: 2
 
-# Set the OS, Python version, and other tools you might need
+# Set the Python version and other tools you might need
 build:
-  os: ubuntu-22.04
   tools:
     python: "3.12"
     nodejs: "19"
@@ -27,7 +26,6 @@ python:
     - requirements: docs/requirements.txt  # If you use specific Python dependencies for Sphinx
 
 # Install Node.js dependencies using a custom command
-# This replaces the problematic npm.install section
 build:
   commands:
     - npm install  # Install all dependencies from package.json
