@@ -11,6 +11,9 @@ build:
   tools:
     python: "3.12"
     nodejs: "19"
+  jobs:
+    post_create_environment:
+      - npm install  # Install all dependencies from package.json
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
@@ -25,8 +28,3 @@ formats:
 python:
   install:
     - requirements: docs/requirements.txt  # If you use specific Python dependencies for Sphinx
-
-# Install Node.js dependencies using a custom command
-jobs:
-  post_create_environment:
-    - npm install  # Install all dependencies from package.json

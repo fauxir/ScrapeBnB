@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.abspath('../'))
 project = 'ScrapeBnB'
 author = 'Michael Adrian'
 copyright = '2024, Michael Adrian'
-release = '1.1.5'
+release = '1.1.6'
 
 # General configuration
 extensions = [
