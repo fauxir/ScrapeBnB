@@ -1,3 +1,5 @@
+
+
 # 🏠 ScrapeBnB
 
 [![npm version](https://img.shields.io/npm/v/scrapebnb.svg)](https://www.npmjs.com/package/scrapebnb)
@@ -51,7 +53,7 @@ Returns a Promise that resolves with the listing details.
 
 Similar to `getFromRoomUrl`, but uses the room ID instead of the full URL.
 
-### `getPrice(productId, impressionId, apiKey, currency, cookies, checkIn, checkOut, proxyUrl)`
+### `getPriceByUrl(roomURL, currency, checkIn, checkOut, proxyUrl)`
 
 Fetches pricing information for a specific listing.
 
